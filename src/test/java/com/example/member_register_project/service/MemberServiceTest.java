@@ -20,6 +20,7 @@ public class MemberServiceTest {
     MemberService memberService;
     MemoryMemberRepository memberRepository;
     
+    // 의존성 주입
     @BeforeEach
     public void beforeEach() {
         memberRepository = new MemoryMemberRepository();

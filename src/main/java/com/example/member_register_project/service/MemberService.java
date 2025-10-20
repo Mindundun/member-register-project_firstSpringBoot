@@ -1,13 +1,10 @@
 package com.example.member_register_project.service;
 
-
-
 import java.util.List;
 import java.util.Optional;
 
 import com.example.member_register_project.domain.Member;
 import com.example.member_register_project.repository.MemberRepository;
-import com.example.member_register_project.repository.MemoryMemberRepository;
 
 public class MemberService {
     
