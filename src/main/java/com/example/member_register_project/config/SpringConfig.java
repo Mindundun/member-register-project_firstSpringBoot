@@ -11,6 +11,7 @@ import com.example.member_register_project.repository.MemoryMemberRepository;
 import com.example.member_register_project.repository.JdbcMemberRepository;
 import com.example.member_register_project.repository.JpaMemberRepository;
 import com.example.member_register_project.service.MemberService;
+import com.example.member_register_project.aop.TimeTraceAop;
 
 import jakarta.persistence.EntityManager;
 
@@ -41,6 +42,11 @@ public class SpringConfig {
     public MemberService memberService() {
         return new MemberService(memberRepository);
     }
+
+    // @Bean
+    // public TimeTraceAop TimeTraceAop() {
+    //     return new TimeTraceAop();
+    // }
 
     // @Bean
     // public MemberRepository memberRepository(){
