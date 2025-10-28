@@ -3,9 +3,12 @@ package com.example.member_register_project.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.springframework.transaction.annotation.Transactional;
+
 import com.example.member_register_project.domain.Member;
 import com.example.member_register_project.repository.MemberRepository;
 
+@Transactional
 public class MemberService {
     
     private final MemberRepository memberRepository;
